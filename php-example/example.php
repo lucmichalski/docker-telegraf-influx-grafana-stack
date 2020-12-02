@@ -5,7 +5,7 @@ require __DIR__ . '/vendor/autoload.php';
 
 $statsd = new League\StatsD\Client();
 $statsd->configure([
-    'host'      => '127.0.0.1',
+    'host'      => 'telegraf',
     'port'      => 8125,
     'namespace' => 'performance'
 ]);
